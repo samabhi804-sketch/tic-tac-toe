@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="controls">
+      <label>
+        Mode:
+        <select id="mode">
+          <option value="pvp">2 Players (Local)</option>
+          <option value="cpu">Play vs Computer</option>
+        </select>
+      </label>
+      <button id="restart">Restart</button>
+    </div>
+
+    <div id="status" class="status">X's turn</div>
+
+    <div id="board" class="board" role="grid" aria-label="Tic Tac Toe board">
+      <!-- 9 cells inserted by JS -->
+    </div>
+
+    <footer class="footer">
+      <small>Click a cell to play. Computer plays O. Unbeatable AI.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
